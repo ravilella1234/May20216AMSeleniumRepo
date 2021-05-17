@@ -54,7 +54,55 @@ public class BaseTest
 	
 	public static void navigateUrl(String url)
 	{
-		driver.get(childProp.getProperty(url));
+		//driver.get(childProp.getProperty(url));
+		driver.navigate().to(childProp.getProperty(url));
 	}
+	
+	public static void windowRefresh() 
+	{
+		driver.navigate().refresh();
+	}
+
+	public static void windowForward() 
+	{
+		driver.navigate().forward();
+	}
+
+	public static void windowBack() 
+	{
+		driver.navigate().back();
+	}
+
+	public static void deleteCookies() 
+	{
+		driver.manage().deleteAllCookies();
+	}
+
+	public static String windowCurrentUrl() 
+	{
+		return driver.getCurrentUrl();
+	}
+
+	public static String windowTitle() 
+	{
+		return driver.getTitle();
+	}
+
+	public static void windowMaximize() 
+	{
+		driver.manage().window().maximize();
+	}
+	
+	public static void waitForElement(int timeInMilliSeconds) throws Exception 
+	{
+		Thread.sleep(timeInMilliSeconds);
+	}
+	
+	public static void windowClose() 
+	{
+		//driver.quit();
+		driver.close();
+	}
+
 
 }
