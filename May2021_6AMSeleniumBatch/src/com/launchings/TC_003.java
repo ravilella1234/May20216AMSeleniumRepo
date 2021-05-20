@@ -16,6 +16,13 @@ public class TC_003 extends BaseTest
 		
 		navigateUrl("amazonurl");
 		
+		selectOption("amazonsearchdrop_id", "Books");
+		
+		typeText("amazonsearchtextbox_name", "Harry Potter");
+		
+		clickElement("amazonsearchbutton_xpath");
+		
+		
 		//WebElement loc = driver.findElement(By.id("searchDropdownBox"));
 		//loc.sendKeys("Books");
 		
@@ -40,5 +47,4 @@ public class TC_003 extends BaseTest
 		}
 		
 	}
-
 }
