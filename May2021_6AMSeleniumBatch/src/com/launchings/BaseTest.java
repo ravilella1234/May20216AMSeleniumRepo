@@ -14,6 +14,9 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.ProfilesIni;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+
 public class BaseTest 
 {
 	public static WebDriver driver;
@@ -23,6 +26,8 @@ public class BaseTest
 	public static Properties mainProp;
 	public static Properties childProp;
 	public static Properties orProp;
+	public static ExtentReports report;
+	public static ExtentTest test;
 	
 	public static void init() throws Exception
 	{
@@ -48,6 +53,8 @@ public class BaseTest
 		
 		fis = new FileInputStream(projectPath+"//log4jconfig.properties");
 		PropertyConfigurator.configure(fis);
+		
+		report = ExtentManager.getInstance();
 	}
 	
 	public static void launch(String browser)
