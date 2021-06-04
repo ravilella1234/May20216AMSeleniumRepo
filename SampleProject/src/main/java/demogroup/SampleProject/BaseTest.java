@@ -65,7 +65,7 @@ public class BaseTest
 	
 	public static void launch(String browser)
 	{
-		if(p.getProperty(browser).equals("chrome"))
+		if(browser.equals("chrome"))
 		{
 			//System.setProperty("webdriver.chrome.driver", "C:\\Users\\DELL\\Desktop\\May 20201 Drivers\\chromedriver.exe");
 			System.setProperty("webdriver.chrome.driver", projectPath+"//drivers//chromedriver.exe");
@@ -76,7 +76,7 @@ public class BaseTest
 			
 			driver = new ChromeDriver(option);
 		}
-		else if(p.getProperty(browser).equals("firefox"))
+		else if(browser.equals("firefox"))
 		{
 			//System.setProperty("webdriver.gecko.driver", "C:/Users/DELL/Desktop/May 20201 Drivers/geckodriver.exe");
 			System.setProperty("webdriver.gecko.driver", projectPath+"//drivers//geckodriver.exe");
