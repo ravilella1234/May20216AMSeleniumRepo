@@ -1,101 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
-    <line>
-      <![CDATA[Clicked on Image Link]]>
-    </line>
   </reporter-output>
-  <suite name="AutomationSuite" duration-ms="133223" started-at="2021-06-04T07:16:32 IST" finished-at="2021-06-04T07:18:45 IST">
+  <suite name="megesuite" duration-ms="0" started-at="2021-06-07T06:44:59 IST" finished-at="2021-06-07T06:44:59 IST">
     <groups>
     </groups>
-    <test name="FirefoxTest" duration-ms="133223" started-at="2021-06-04T07:16:32 IST" finished-at="2021-06-04T07:18:45 IST">
-      <class name="demogroup.SampleProject.CheckBox1">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:demogroup.SampleProject.CheckBox1@694e1548]" name="beforeMethod" is-config="true" duration-ms="51130" started-at="2021-06-04T07:16:32 IST" finished-at="2021-06-04T07:17:23 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
+  </suite> <!-- megesuite -->
+  <suite name="SuiteA" duration-ms="9141" started-at="2021-06-07T06:44:50 IST" finished-at="2021-06-07T06:44:59 IST">
+    <groups>
+    </groups>
+    <test name="testA" duration-ms="9141" started-at="2021-06-07T06:44:50 IST" finished-at="2021-06-07T06:44:59 IST">
+      <class name="suiteA.TestA2">
+        <test-method status="PASS" signature="testA2()[pri:0, instance:suiteA.TestA2@3498ed]" name="testA2" duration-ms="3020" started-at="2021-06-07T06:44:50 IST" finished-at="2021-06-07T06:44:53 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkboxTest()[pri:0, instance:demogroup.SampleProject.CheckBox1@694e1548]" name="checkboxTest" duration-ms="1857" started-at="2021-06-04T07:17:23 IST" finished-at="2021-06-04T07:17:25 IST">
+        </test-method> <!-- testA2 -->
+      </class> <!-- suiteA.TestA2 -->
+      <class name="suiteA.TestA3">
+        <test-method status="PASS" signature="testA3()[pri:0, instance:suiteA.TestA3@1a407d53]" name="testA3" duration-ms="3010" started-at="2021-06-07T06:44:53 IST" finished-at="2021-06-07T06:44:56 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkboxTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:demogroup.SampleProject.CheckBox1@694e1548]" name="afterMethod" is-config="true" duration-ms="5924" started-at="2021-06-04T07:17:25 IST" finished-at="2021-06-04T07:17:31 IST">
+        </test-method> <!-- testA3 -->
+      </class> <!-- suiteA.TestA3 -->
+      <class name="suiteA.TestA1">
+        <test-method status="PASS" signature="testA1()[pri:0, instance:suiteA.TestA1@3d8c7aca]" name="testA1" duration-ms="3004" started-at="2021-06-07T06:44:56 IST" finished-at="2021-06-07T06:44:59 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- demogroup.SampleProject.CheckBox1 -->
-      <class name="demogroup.SampleProject.LinksTesting1">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:demogroup.SampleProject.LinksTesting1@1c3a4799]" name="setup" is-config="true" duration-ms="14738" started-at="2021-06-04T07:17:31 IST" finished-at="2021-06-04T07:17:46 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testA1 -->
+      </class> <!-- suiteA.TestA1 -->
+    </test> <!-- testA -->
+  </suite> <!-- SuiteA -->
+  <suite name="SuiteB" duration-ms="9139" started-at="2021-06-07T06:44:50 IST" finished-at="2021-06-07T06:44:59 IST">
+    <groups>
+    </groups>
+    <test name="TestB" duration-ms="9139" started-at="2021-06-07T06:44:50 IST" finished-at="2021-06-07T06:44:59 IST">
+      <class name="suiteB.TestB1">
+        <test-method status="PASS" signature="testB1()[pri:0, instance:suiteB.TestB1@68837a77]" name="testB1" duration-ms="3020" started-at="2021-06-07T06:44:50 IST" finished-at="2021-06-07T06:44:53 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="linktesting1()[pri:0, instance:demogroup.SampleProject.LinksTesting1@1c3a4799]" name="linktesting1" duration-ms="2289" started-at="2021-06-04T07:17:46 IST" finished-at="2021-06-04T07:17:48 IST">
-          <reporter-output>
-            <line>
-              <![CDATA[Clicked on Image Link]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- linktesting1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:demogroup.SampleProject.LinksTesting1@1c3a4799]" name="tearDown" is-config="true" duration-ms="3872" started-at="2021-06-04T07:17:48 IST" finished-at="2021-06-04T07:17:52 IST">
+        </test-method> <!-- testB1 -->
+      </class> <!-- suiteB.TestB1 -->
+      <class name="suiteB.TestB3">
+        <test-method status="PASS" signature="testB3()[pri:0, instance:suiteB.TestB3@6be46e8f]" name="testB3" duration-ms="3009" started-at="2021-06-07T06:44:53 IST" finished-at="2021-06-07T06:44:56 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- demogroup.SampleProject.LinksTesting1 -->
-      <class name="demogroup.SampleProject.RadioButton1">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:demogroup.SampleProject.RadioButton1@131276c2]" name="beforeMethod" is-config="true" duration-ms="19238" started-at="2021-06-04T07:17:52 IST" finished-at="2021-06-04T07:18:11 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testB3 -->
+      </class> <!-- suiteB.TestB3 -->
+      <class name="suiteB.TestB2">
+        <test-method status="PASS" signature="testB2()[pri:0, instance:suiteB.TestB2@3567135c]" name="testB2" duration-ms="3002" started-at="2021-06-07T06:44:56 IST" finished-at="2021-06-07T06:44:59 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="radioButton1()[pri:0, instance:demogroup.SampleProject.RadioButton1@131276c2]" name="radioButton1" duration-ms="1683" started-at="2021-06-04T07:18:11 IST" finished-at="2021-06-04T07:18:13 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- radioButton1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:demogroup.SampleProject.RadioButton1@131276c2]" name="afterMethod" is-config="true" duration-ms="3964" started-at="2021-06-04T07:18:13 IST" finished-at="2021-06-04T07:18:17 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- demogroup.SampleProject.RadioButton1 -->
-      <class name="demogroup.SampleProject.TNG_001">
-        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:demogroup.SampleProject.TNG_001@26aa12dd]" name="startProcess" is-config="true" duration-ms="13944" started-at="2021-06-04T07:18:17 IST" finished-at="2021-06-04T07:18:31 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="amazon()[pri:0, instance:demogroup.SampleProject.TNG_001@26aa12dd]" name="amazon" duration-ms="7131" started-at="2021-06-04T07:18:31 IST" finished-at="2021-06-04T07:18:38 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amazon -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:demogroup.SampleProject.TNG_001@26aa12dd]" name="endProcess" is-config="true" duration-ms="7327" started-at="2021-06-04T07:18:38 IST" finished-at="2021-06-04T07:18:45 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endProcess -->
-      </class> <!-- demogroup.SampleProject.TNG_001 -->
-    </test> <!-- FirefoxTest -->
-  </suite> <!-- AutomationSuite -->
+        </test-method> <!-- testB2 -->
+      </class> <!-- suiteB.TestB2 -->
+    </test> <!-- TestB -->
+  </suite> <!-- SuiteB -->
 </testng-results>
