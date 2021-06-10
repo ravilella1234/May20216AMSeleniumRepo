@@ -34,6 +34,13 @@ public class BaseTest
 	public static Properties orProp;
 	public static ExtentReports report;
 	public static ExtentTest test;
+	public static String fileName;
+	
+	static
+	{
+		Date d = new Date();
+		fileName = d.toString().replace(':', '_').replace(' ', '_');
+	}
 	
 	public static void init() throws Exception
 	{
