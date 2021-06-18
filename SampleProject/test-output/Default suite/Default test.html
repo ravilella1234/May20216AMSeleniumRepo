@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jun 16 06:24:49 IST 2021</td>
+<td>Started on:</td><td>Fri Jun 18 06:27:05 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (116 ms)</td>
+<tr><td>Total time:</td><td>38 seconds (38318 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,22 +67,38 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='excelDataDriven.DataProviderDemo.f()'><b>f</b><br>Test class: excelDataDriven.DataProviderDemo</td>
-<td><div><pre>org.testng.internal.reflect.MethodMatcherException: 
-Data provider mismatch
-Method: f([Parameter{index=0, type=java.lang.Integer, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.Integer) 1,(java.lang.String) a]
-	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:45)
-	at org.testng.internal.Parameters.injectParameters(Parameters.java:796)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:983)
+<td title='excelDataDriven.DataManagentFinalVersion.f()'><b>f</b><br>Test class: excelDataDriven.DataManagentFinalVersion<br>Parameters: {ExpectedResult=loginSuccess, RunMode=Y, Pasword=zoho2015, UserName=ravilella.2015@gmail.com, Browser=chrome}</td>
+<td></td>
+<td>36</td>
+<td>excelDataDriven.DataManagentFinalVersion@55a561cf</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='excelDataDriven.DataManagentFinalVersion.f()'><b>f</b><br>Test class: excelDataDriven.DataManagentFinalVersion<br>Parameters: {ExpectedResult=loginSuccess, RunMode=N, Pasword=P1, UserName=U1, Browser=firefox}</td>
+<td><div><pre>org.testng.SkipException: Testcase is Skipped as set-to No...
+	at excelDataDriven.DataManagentFinalVersion.f(DataManagentFinalVersion.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -100,14 +116,17 @@ Arguments: [(java.lang.Integer) 1,(java.lang.String) a]
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1374026904", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1374026904'><pre>org.testng.internal.reflect.MethodMatcherException: 
-Data provider mismatch
-Method: f([Parameter{index=0, type=java.lang.Integer, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.Integer) 1,(java.lang.String) a]
-	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:45)
-	at org.testng.internal.Parameters.injectParameters(Parameters.java:796)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:983)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1170788511", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1170788511'><pre>org.testng.SkipException: Testcase is Skipped as set-to No...
+	at excelDataDriven.DataManagentFinalVersion.f(DataManagentFinalVersion.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -127,7 +146,7 @@ Arguments: [(java.lang.Integer) 1,(java.lang.String) a]
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>excelDataDriven.DataProviderDemo@4b168fa9</td></tr>
+<td>excelDataDriven.DataManagentFinalVersion@55a561cf</td></tr>
 </table><p>
 </body>
 </html>

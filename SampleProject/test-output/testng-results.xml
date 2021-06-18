@@ -1,28 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="1" failed="0" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="116" started-at="2021-06-16T00:54:49Z" finished-at="2021-06-16T00:54:50Z">
+  <suite name="Default suite" duration-ms="38318" started-at="2021-06-18T00:57:05Z" finished-at="2021-06-18T00:57:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="116" started-at="2021-06-16T00:54:49Z" finished-at="2021-06-16T00:54:50Z">
-      <class name="excelDataDriven.DataProviderDemo">
-        <test-method status="FAIL" signature="f(java.lang.Integer, java.lang.String, java.lang.String)[pri:0, instance:excelDataDriven.DataProviderDemo@4b168fa9]" name="f" duration-ms="41" started-at="2021-06-16T00:54:49Z" data-provider="dp" finished-at="2021-06-16T00:54:50Z">
-          <exception class="org.testng.internal.reflect.MethodMatcherException">
+    <test name="Default test" duration-ms="38318" started-at="2021-06-18T00:57:05Z" finished-at="2021-06-18T00:57:43Z">
+      <class name="excelDataDriven.DataManagentFinalVersion">
+        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:excelDataDriven.DataManagentFinalVersion@55a561cf]" name="f" duration-ms="36743" started-at="2021-06-18T00:57:07Z" data-provider="getData" finished-at="2021-06-18T00:57:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpectedResult=loginSuccess, RunMode=Y, Pasword=zoho2015, UserName=ravilella.2015@gmail.com, Browser=chrome}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:excelDataDriven.DataManagentFinalVersion@55a561cf]" name="f" duration-ms="4" started-at="2021-06-18T00:57:43Z" data-provider="getData" finished-at="2021-06-18T00:57:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpectedResult=loginSuccess, RunMode=N, Pasword=P1, UserName=U1, Browser=firefox}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[
-Data provider mismatch
-Method: f([Parameter{index=0, type=java.lang.Integer, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.Integer) 1,(java.lang.String) a]]]>
+              <![CDATA[Testcase is Skipped as set-to No...]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
-Data provider mismatch
-Method: f([Parameter{index=0, type=java.lang.Integer, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}])
-Arguments: [(java.lang.Integer) 1,(java.lang.String) a]
-at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:45)
-at org.testng.internal.Parameters.injectParameters(Parameters.java:796)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:983)
+              <![CDATA[org.testng.SkipException: Testcase is Skipped as set-to No...
+at excelDataDriven.DataManagentFinalVersion.f(DataManagentFinalVersion.java:20)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -42,11 +60,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-      </class> <!-- excelDataDriven.DataProviderDemo -->
+      </class> <!-- excelDataDriven.DataManagentFinalVersion -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
