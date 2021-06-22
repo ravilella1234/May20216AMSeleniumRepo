@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="59938" started-at="2021-06-19T00:43:23Z" finished-at="2021-06-19T00:44:23Z">
+    <groups>
+      <group name="regression">
+        <method signature="TNG_001.amazon()[pri:0, instance:demogroup.SampleProject.TNG_001@6328d34a]" name="amazon" class="demogroup.SampleProject.TNG_001"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="TNG_001.amazon()[pri:0, instance:demogroup.SampleProject.TNG_001@6328d34a]" name="amazon" class="demogroup.SampleProject.TNG_001"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test name="Test" duration-ms="59938" started-at="2021-06-19T00:43:23Z" finished-at="2021-06-19T00:44:23Z">
+      <class name="demogroup.SampleProject.TNG_001">
+        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:demogroup.SampleProject.TNG_001@6328d34a]" name="startProcess" is-config="true" duration-ms="16285" started-at="2021-06-19T00:43:23Z" finished-at="2021-06-19T00:43:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startProcess -->
+        <test-method status="PASS" signature="amazon()[pri:0, instance:demogroup.SampleProject.TNG_001@6328d34a]" name="amazon" duration-ms="31684" started-at="2021-06-19T00:43:39Z" finished-at="2021-06-19T00:44:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazon -->
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:demogroup.SampleProject.TNG_001@6328d34a]" name="endProcess" is-config="true" duration-ms="11897" started-at="2021-06-19T00:44:11Z" finished-at="2021-06-19T00:44:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endProcess -->
+      </class> <!-- demogroup.SampleProject.TNG_001 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

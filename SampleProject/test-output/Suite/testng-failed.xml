@@ -4,13 +4,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="assertions.SoftAssertion">
+      <class name="demogroup.SampleProject.TNG_001">
         <methods>
           <include name="endProcess"/>
-          <include name="f"/>
           <include name="startProcess"/>
+          <include name="amazon"/>
         </methods>
-      </class> <!-- assertions.SoftAssertion -->
+      </class> <!-- demogroup.SampleProject.TNG_001 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
