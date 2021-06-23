@@ -5,8 +5,8 @@
     <classes>
       <class name="pom.POM_001">
         <methods>
-          <include name="loginTest"/>
           <include name="endProcess"/>
+          <include name="registrationTest"/>
           <include name="startProcess"/>
         </methods>
       </class> <!-- pom.POM_001 -->
