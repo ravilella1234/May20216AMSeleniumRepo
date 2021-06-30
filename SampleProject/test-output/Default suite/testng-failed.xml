@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pom.POM_001">
+      <class name="actionsAndJavascriptExecutors.MouseOperations">
         <methods>
-          <include name="endProcess"/>
-          <include name="registrationTest"/>
-          <include name="startProcess"/>
+          <include name="tearDown"/>
+          <include name="dragAnddrop"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- pom.POM_001 -->
+      </class> <!-- actionsAndJavascriptExecutors.MouseOperations -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
