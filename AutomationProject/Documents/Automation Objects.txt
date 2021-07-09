@@ -1,0 +1,19 @@
+
+
+What is a framework ? methodology
+
+
+Objectives to build your project
+--------------------------------
+
+1) Maven Build
+2) Implement Multiple Testcases & batch Run
+3) Manage the test data  - xls/txt/msaccess/json/xml/Properties
+4) Generate test Reports - HTML & Screenshots of the failure/error
+5) Email Reports to team members
+6) Run only the specfic testcases
+7) Re-usability
+8) Compatablity with changing client requirments
+9) GRID  - parallely
+10) Dependencies between tests
+11) Jenkins + GIT
