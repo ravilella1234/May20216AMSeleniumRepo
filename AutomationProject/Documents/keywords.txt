@@ -1,0 +1,22 @@
+Generic Keywords
+----------------
+openBrowser
+navigate
+click
+type
+select
+getText
+
+
+Validation Keywords:
+--------------------
+ValidateTitle
+ValidateText
+validateElementPresent
+
+
+Application Dependent keywords:
+-------------------------------
+login
+selectDateFormatCalendar
+verifyStockAdded
