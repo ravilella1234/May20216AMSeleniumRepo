@@ -1,6 +1,7 @@
 package com.project.keywords;
 
 import java.time.Duration;
+import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,17 +16,20 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class GenericKeywords 
 {
 	public WebDriver driver;
+	public Properties mainProp;
+	public Properties childProp;
+	public String projectPath = System.getProperty("user.dir");
 
 	public void openBrowser(String browserName)
 	{
 		System.out.println("Opening the Browser : " + browserName);
 		
-		if(browserName.equals("chrome"))
+		if(mainProp.getProperty(browserName).equals("chrome"))
 		{
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		}
-		else if(browserName.equals("firefox"))
+		else if(mainProp.getProperty(browserName).equals("firefox"))
 		{
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
@@ -36,70 +40,97 @@ public class GenericKeywords
 	public void navigate(String url)
 	{
 		System.out.println("Navigate to :-" + url);
-		driver.get(url);
+		driver.get(childProp.getProperty(url));
 	}
 	
-	public void click(String locator)
+	public void click(String locatorKey)
 	{
 		//driver.findElement(By.id(locator)).click();
-		getElement(locator).click();
+		getElement(locatorKey).click();
 	}
 	
-	public void type(String locator,String text)
+	public void type(String locatorKey,String text)
 	{
 		//driver.findElement(By.id(locator)).sendKeys(text);
-		getElement(locator).sendKeys(text);
+		getElement(locatorKey).sendKeys(text);
 	}
 	
-	public void select(String locator,String option)
+	public void select(String locatorKey,String option)
 	{
 		
 	}
 	
-	public void getText(String locator)
+	public void getText(String locatorKey)
 	{
 		
 	}
 	
-	public WebElement getElement(String locator)
+	public WebElement getElement(String locatorKey)
 	{
 		//check the presence of element
-		if(!isElementPresent(locator)) {
+		if(!isElementPresent(locatorKey)) {
 			//report the failure
-			System.out.println("Element is not present :-" + locator);
+			System.out.println("Element is not present :-" + locatorKey);
 		}
 		
 		//check the visibility of element
-		if(!isElementVisible(locator)) {
+		if(!isElementVisible(locatorKey)) {
 			//report the failure
-			System.out.println("Element is not visible :- " + locator);
+			System.out.println("Element is not visible :- " + locatorKey);
 		}
 		
-		WebElement e = driver.findElement(By.id(locator));
+		WebElement e =null;
+		if(locatorKey.endsWith("_id")) {
+			e = driver.findElement(By.id((mainProp.getProperty(locatorKey))));
+		}else if(locatorKey.endsWith("_name")) {
+			e = driver.findElement(By.name((mainProp.getProperty(locatorKey))));
+		}else if(locatorKey.endsWith("_xpath")) {
+			e = driver.findElement(By.xpath((mainProp.getProperty(locatorKey))));
+		}else if(locatorKey.endsWith("_css")) {
+			e = driver.findElement(By.cssSelector((mainProp.getProperty(locatorKey))));
+		}
+		
 		return e;
 	}
 
-	public boolean isElementVisible(String locator) 
+	public boolean isElementVisible(String locatorKey) 
 	{
-		System.out.println("Checking the visibility of Element :-" + locator);
+		System.out.println("Checking the visibility of Element :-" + locatorKey);
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
 		
-		try{
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(locator)));
+		try{			
+			if(locatorKey.endsWith("_id")){
+				wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(mainProp.getProperty(locatorKey))));
+			}else if(locatorKey.endsWith("_name")) {
+				wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(mainProp.getProperty(locatorKey))));
+			}else if(locatorKey.endsWith("_xpath")) {
+				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(mainProp.getProperty(locatorKey))));
+			}else if(locatorKey.endsWith("_css")) {
+				wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(mainProp.getProperty(locatorKey))));
+			}
 		}catch (Exception e) {
 			return false;
 		}
 		return true;
 	}
 
-	public boolean isElementPresent(String locator) 
+	public boolean isElementPresent(String locatorKey) 
 	{
-		System.out.println("Checking the Presence of Element :-" + locator);
+		System.out.println("Checking the Presence of Element :-" + locatorKey);
 		
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		
 		try {
-			wait.until(ExpectedConditions.presenceOfElementLocated(By.id(locator)));
+			if(locatorKey.endsWith("_id")){
+				wait.until(ExpectedConditions.presenceOfElementLocated(By.id(mainProp.getProperty(locatorKey))));
+			}else if(locatorKey.endsWith("_name")) {
+				wait.until(ExpectedConditions.presenceOfElementLocated(By.name(mainProp.getProperty(locatorKey))));
+			}else if(locatorKey.endsWith("_xpath")) {
+				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(mainProp.getProperty(locatorKey))));
+			}else if(locatorKey.endsWith("_css")) {
+				wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(mainProp.getProperty(locatorKey))));
+			}
+			
 		} catch (Exception e) {
 			return false;
 		}

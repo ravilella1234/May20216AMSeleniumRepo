@@ -8,7 +8,7 @@ public class CreatePortifolioTest
 {
 	
   @Test
-  public void f() 
+  public void f() throws Exception 
   {
 	  //login
 	  //createPortifolio
@@ -17,11 +17,11 @@ public class CreatePortifolioTest
 	  ApplicationKeywords app = new ApplicationKeywords();
 	  //ValidationKeywords vKeywords = new ValidationKeywords();
 	  
-	  app.openBrowser("chrome");
-	  app.navigate("https://portfolio.rediff.com/portfolio-login");
-	  app.type("useremail", "ravilella2021@rediff.com");
-	  app.type("userpass", "Sai@2015");
-	  app.click("loginsubmit");
+	  app.openBrowser("chromebrowser");
+	  app.navigate("rediffurl");
+	  app.type("username_css", "ravilella2021@rediffmail.com");
+	  app.type("password_xpath", "Sai@2015");
+	  app.click("login_submit_id");
 	  
 	  
 	 // app.navigate("https://www.in.rediff.com");
