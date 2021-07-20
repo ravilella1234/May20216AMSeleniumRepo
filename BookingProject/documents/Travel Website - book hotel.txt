@@ -1,0 +1,43 @@
+
+
+Travel Website - book hotel
+
+Req 1
+-----
+goto the website + checkin date + checkout date + adults + select the hotel + select a room + payment + check mail for confirmation
+
+Req 2
+-----
+goto the website + checkin date + checkout date + adults + select the hotel + select a room + payment(card, googlepay, bank) + check mail for confirmation
+
+Req 3
+-----
+goto the website + checkin date + checkout date + adults + select the hotel + select a room + payment(card, googlepay, bank) / pay@hotel + check mail for confirmation
+
+Req 4
+-----
+goto the website + checkin date (within 7 days from today -no cancellation) + checkout date + adults + select the hotel + select a room + payment(card, googlepay, bank) / pay@hotel + check mail for confirmation
+
+Req 5
+-----
+goto the website + checkin date (within 7 days from today -no cancellation) + checkout date + adults + select the hotel + select a room + payment(card, googlepay, bank)(10-20% discount) / pay@hotel(5-10% discount) + check mail for confirmation
+
+
+Make a new Booking - search + select the room + entert he guest info + select your payment + confrmation mail
+
+Search+select+pay
+Modify Existing
+cancel a booking
+
+
+
+
+
+
+
+
+
+
+
+
+
