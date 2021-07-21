@@ -26,8 +26,8 @@ goto the website + checkin date (within 7 days from today -no cancellation) + ch
 Make a new Booking - search + select the room + entert he guest info + select your payment + confrmation mail
 
 Search+select+pay
-Modify Existing
-cancel a booking
+Modify Existing booking - loadBooking + modify(roomtype , add some additional rooms) + discounts + payments  + check for Confirmation
+cancel the booking - loadBooking + cancel Booking  + check the conformation email
 
 
 

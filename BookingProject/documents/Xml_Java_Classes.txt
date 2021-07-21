@@ -1,0 +1,9 @@
+TestNG
+
+XmlSite - test suite
+XmlTest - test in a Suite
+XmlClass - class in a suite
+
+TestNG HAS List<XmlSuite>
+XmlSuite HAS List<XmlTest>
+XmlTest Has List<XmlClass>
