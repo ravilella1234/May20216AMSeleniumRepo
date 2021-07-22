@@ -1,0 +1,25 @@
+{
+	"name":"Hybrid Framework",
+	"Date":"22nd,July",
+	
+	"classes":[
+		{
+			"className":"BookingSearch",
+			"methods":["searchHotel","selectHotel","enterGuestInfo"]
+		},
+		
+		{
+			"className":"PaymentManager",
+			"methods":["applyDiscount","makePayment"]
+		},
+		
+		{
+			"className":"CustomerCommunications",
+			"methods":["checkEmail"]
+		}
+	
+	
+	]
+
+
+}
