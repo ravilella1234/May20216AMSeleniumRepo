@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Booking Suite]">
-  <test thread-count="5" name="Create Booking Test - No Discount(failed)">
+<suite name="Failed suite [Booking Suite]">
+  <test thread-count="5" name="Command line test 77393fa4-f235-4dfd-9b82-c4f67c0fd60e(failed)">
     <classes>
       <class name="testcases.PaymentManager">
         <methods>
@@ -9,5 +9,5 @@
         </methods>
       </class> <!-- testcases.PaymentManager -->
     </classes>
-  </test> <!-- Create Booking Test - No Discount(failed) -->
+  </test> <!-- Command line test 77393fa4-f235-4dfd-9b82-c4f67c0fd60e(failed) -->
 </suite> <!-- Failed suite [Booking Suite] -->
