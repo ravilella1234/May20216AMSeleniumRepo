@@ -1,0 +1,11 @@
+Portofolio Suite:
+-----------------
+Create Portofolio - login, create Portofolio, verify
+Delete Portofolio - login, select the Portofolio , delete the Portofolio , verify
+
+Stock MAnagement Suite :
+------------------------
+Add Fresh Stocks  - Login, select the Portofolio, Add the Stock, Verify in table, verify the quantity, verify the avg buy price, verify the transanction history.
+
+Modify the Stocks - Login, select the Portofolio, Buy/Sell the stocks, Verify in table, verify the quantity, verify the avg buy price, verify the transanction history.
+
