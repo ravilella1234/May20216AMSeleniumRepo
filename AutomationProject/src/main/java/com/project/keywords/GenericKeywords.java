@@ -15,7 +15,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class GenericKeywords 
 {
-	public WebDriver driver;
+	public  WebDriver driver;
 	public Properties mainProp;
 	public Properties childProp;
 	public String projectPath = System.getProperty("user.dir");
