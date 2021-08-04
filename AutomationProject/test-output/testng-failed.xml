@@ -3,24 +3,26 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [PortfolioSuite]">
   <test thread-count="5" name="Create Portfolio Test(failed)">
     <classes>
-      <class name="com.project.suiteA.Session">
+      <class name="com.project.suiteA.PortfolioManagement">
         <methods>
-          <include name="doLogin" invocation-numbers="0"/>
+          <include name="quit"/>
           <include name="beforeTest"/>
+          <include name="createPortofolio" invocation-numbers="0"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.project.suiteA.Session -->
+      </class> <!-- com.project.suiteA.PortfolioManagement -->
     </classes>
   </test> <!-- Create Portfolio Test(failed) -->
   <test thread-count="5" name="Delete Portfolio Test(failed)">
     <classes>
-      <class name="com.project.suiteA.Session">
+      <class name="com.project.suiteA.PortfolioManagement">
         <methods>
-          <include name="doLogin" invocation-numbers="0"/>
+          <include name="quit"/>
           <include name="beforeTest"/>
+          <include name="deletePortofolio"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.project.suiteA.Session -->
+      </class> <!-- com.project.suiteA.PortfolioManagement -->
     </classes>
   </test> <!-- Delete Portfolio Test(failed) -->
 </suite> <!-- Failed suite [PortfolioSuite] -->

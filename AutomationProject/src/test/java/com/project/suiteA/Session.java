@@ -3,6 +3,7 @@ package com.project.suiteA;
 import org.testng.ITestContext;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 import com.project.Base.BaseTest;
 
 public class Session extends BaseTest
@@ -11,19 +12,18 @@ public class Session extends BaseTest
 	@Test
 	public void doLogin(ITestContext context) throws Exception
 	{
-		System.out.println("doLogin");
-		i=100;
-		System.out.println(i);
-		context.setAttribute("i_val", i);
+		test.log(Status.INFO, "Loggib In");
 		app.openBrowser("chromebrowser");
-		
+		app.navigate("rediffurl");
+		app.type("username_css", "ravilella2021@rediffmail.com");
+		app.type("password_xpath", "Sai@2015");
+		app.click("login_submit_id");
 	}
 	
 	@Test
 	public void doLogout() throws Exception
 	{
-		System.out.println("doLogout");
-		
+		test.log(Status.INFO, "Logging Out");		
 	}
 
 }

@@ -1,63 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="6" total="10" passed="4">
+<testng-results skipped="0" failed="0" ignored="8" total="12" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="PortfolioSuite" duration-ms="16275" started-at="2021-08-03T00:55:25Z" finished-at="2021-08-03T00:55:41Z">
+  <suite name="PortfolioSuite" duration-ms="21545" started-at="2021-08-04T00:52:56Z" finished-at="2021-08-04T00:53:17Z">
     <groups>
     </groups>
-    <test name="Create Portfolio Test" duration-ms="12311" started-at="2021-08-03T00:55:25Z" finished-at="2021-08-03T00:55:37Z">
+    <test name="Create Portfolio Test" duration-ms="17122" started-at="2021-08-04T00:52:56Z" finished-at="2021-08-04T00:53:13Z">
       <class name="com.project.suiteA.Session">
-        <test-method status="PASS" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:com.project.suiteA.Session@2928854b]" name="beforeTest" is-config="true" duration-ms="55" started-at="2021-08-03T00:55:25Z" finished-at="2021-08-03T00:55:25Z">
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:com.project.suiteA.Session@6ce139a4]" name="beforeTest" is-config="true" duration-ms="583" started-at="2021-08-04T00:52:56Z" finished-at="2021-08-04T00:52:57Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@708f5957]]>
+                <![CDATA[org.testng.TestRunner@4e3958e7]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.project.suiteA.Session@2928854b]" name="beforeMethod" is-config="true" duration-ms="5" started-at="2021-08-03T00:55:25Z" finished-at="2021-08-03T00:55:25Z">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.project.suiteA.Session@6ce139a4]" name="beforeMethod" is-config="true" duration-ms="4" started-at="2021-08-04T00:52:57Z" finished-at="2021-08-04T00:52:57Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@708f5957]]>
+                <![CDATA[org.testng.TestRunner@4e3958e7]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="doLogin(org.testng.ITestContext)[pri:0, instance:com.project.suiteA.Session@2928854b]" name="doLogin" duration-ms="7964" started-at="2021-08-03T00:55:25Z" finished-at="2021-08-03T00:55:33Z">
+        <test-method status="PASS" signature="doLogin(org.testng.ITestContext)[pri:0, instance:com.project.suiteA.Session@6ce139a4]" name="doLogin" duration-ms="8615" started-at="2021-08-04T00:52:57Z" finished-at="2021-08-04T00:53:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@708f5957]]>
+                <![CDATA[org.testng.TestRunner@4e3958e7]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLogin -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.project.suiteA.Session@6ce139a4]" name="quit" is-config="true" duration-ms="2235" started-at="2021-08-04T00:53:11Z" finished-at="2021-08-04T00:53:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
       </class> <!-- com.project.suiteA.Session -->
       <class name="com.project.suiteA.PortfolioManagement">
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.project.suiteA.PortfolioManagement@27ae2fd0]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-03T00:55:33Z" finished-at="2021-08-03T00:55:33Z">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.project.suiteA.PortfolioManagement@6973bf95]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-04T00:53:05Z" finished-at="2021-08-04T00:53:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@708f5957]]>
+                <![CDATA[org.testng.TestRunner@4e3958e7]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="createPortofolio(org.testng.ITestContext)[pri:0, instance:com.project.suiteA.PortfolioManagement@27ae2fd0]" name="createPortofolio" duration-ms="4215" started-at="2021-08-03T00:55:33Z" finished-at="2021-08-03T00:55:37Z">
+        <test-method status="PASS" signature="createPortofolio(org.testng.ITestContext)[pri:0, instance:com.project.suiteA.PortfolioManagement@6973bf95]" name="createPortofolio" duration-ms="5615" started-at="2021-08-04T00:53:05Z" finished-at="2021-08-04T00:53:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@708f5957]]>
+                <![CDATA[org.testng.TestRunner@4e3958e7]]>
               </value>
             </param>
           </params>
@@ -66,55 +70,59 @@
         </test-method> <!-- createPortofolio -->
       </class> <!-- com.project.suiteA.PortfolioManagement -->
     </test> <!-- Create Portfolio Test -->
-    <test name="Delete Portfolio Test" duration-ms="3925" started-at="2021-08-03T00:55:37Z" finished-at="2021-08-03T00:55:41Z">
+    <test name="Delete Portfolio Test" duration-ms="4303" started-at="2021-08-04T00:53:13Z" finished-at="2021-08-04T00:53:17Z">
       <class name="com.project.suiteA.Session">
-        <test-method status="PASS" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:com.project.suiteA.Session@71b1176b]" name="beforeTest" is-config="true" duration-ms="4" started-at="2021-08-03T00:55:38Z" finished-at="2021-08-03T00:55:38Z">
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:com.project.suiteA.Session@1677d1]" name="beforeTest" is-config="true" duration-ms="7" started-at="2021-08-04T00:53:13Z" finished-at="2021-08-04T00:53:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@669253b7]]>
+                <![CDATA[org.testng.TestRunner@23ee75c5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="doLogin(org.testng.ITestContext)[pri:0, instance:com.project.suiteA.Session@71b1176b]" name="doLogin" duration-ms="3888" started-at="2021-08-03T00:55:38Z" finished-at="2021-08-03T00:55:41Z">
+        <test-method status="PASS" signature="doLogin(org.testng.ITestContext)[pri:0, instance:com.project.suiteA.Session@1677d1]" name="doLogin" duration-ms="3846" started-at="2021-08-04T00:53:13Z" finished-at="2021-08-04T00:53:17Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@669253b7]]>
+                <![CDATA[org.testng.TestRunner@23ee75c5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLogin -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.project.suiteA.Session@71b1176b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-03T00:55:38Z" finished-at="2021-08-03T00:55:38Z">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.project.suiteA.Session@1677d1]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-04T00:53:13Z" finished-at="2021-08-04T00:53:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@669253b7]]>
+                <![CDATA[org.testng.TestRunner@23ee75c5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.project.suiteA.Session@1677d1]" name="quit" is-config="true" duration-ms="404" started-at="2021-08-04T00:53:17Z" finished-at="2021-08-04T00:53:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
       </class> <!-- com.project.suiteA.Session -->
       <class name="com.project.suiteA.PortfolioManagement">
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.project.suiteA.PortfolioManagement@6193932a]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-03T00:55:41Z" finished-at="2021-08-03T00:55:41Z">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.project.suiteA.PortfolioManagement@48fa0f47]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-04T00:53:17Z" finished-at="2021-08-04T00:53:17Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@669253b7]]>
+                <![CDATA[org.testng.TestRunner@23ee75c5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="deletePortofolio()[pri:0, instance:com.project.suiteA.PortfolioManagement@6193932a]" name="deletePortofolio" duration-ms="8" started-at="2021-08-03T00:55:41Z" finished-at="2021-08-03T00:55:41Z">
+        <test-method status="PASS" signature="deletePortofolio()[pri:0, instance:com.project.suiteA.PortfolioManagement@48fa0f47]" name="deletePortofolio" duration-ms="26" started-at="2021-08-04T00:53:17Z" finished-at="2021-08-04T00:53:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deletePortofolio -->
