@@ -11,6 +11,8 @@ import com.aventstack.extentreports.Status;
 import com.project.keywords.ApplicationKeywords;
 import com.reports.ExtentManager;
 
+// acceptable failure, critical failure, unexpected failure
+
 public class BaseTest 
 {
 	public ApplicationKeywords app;
@@ -31,6 +33,7 @@ public class BaseTest
 		rep = ExtentManager.getReports();
 		test = rep.createTest(context.getCurrentXmlTest().getName());
 		test.log(Status.INFO, "Starting Test : "+ context.getCurrentXmlTest().getName());
+		app.setReport(test);
 		
 		context.setAttribute("report", rep);
 		context.setAttribute("test", test);

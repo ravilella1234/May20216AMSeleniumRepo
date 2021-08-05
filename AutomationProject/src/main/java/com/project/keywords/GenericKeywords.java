@@ -10,19 +10,24 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.asserts.SoftAssert;
+
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class GenericKeywords 
 {
 	public  WebDriver driver;
 	public Properties mainProp;
 	public Properties childProp;
 	public String projectPath = System.getProperty("user.dir");
+	public ExtentTest test;
+	public SoftAssert softAssert;
 
 	public void openBrowser(String browserName)
 	{
-		System.out.println("Opening the Browser : " + browserName);
+		log("Opening the Browser : " + browserName);
 		
 		if(mainProp.getProperty(browserName).equals("chrome"))
 		{
@@ -39,19 +44,19 @@ public class GenericKeywords
 	
 	public void navigate(String url)
 	{
-		System.out.println("Navigate to :-" + url);
+		log("Navigate to :-" + url);
 		driver.get(childProp.getProperty(url));
 	}
 	
 	public void click(String locatorKey)
 	{
-		//driver.findElement(By.id(locator)).click();
+		log("Clicking on " +locatorKey);
 		getElement(locatorKey).click();
 	}
 	
 	public void type(String locatorKey,String text)
 	{
-		//driver.findElement(By.id(locator)).sendKeys(text);
+		log("Typing text : " +locatorKey +" Data : " + text);
 		getElement(locatorKey).sendKeys(text);
 	}
 	
@@ -137,5 +142,21 @@ public class GenericKeywords
 		return true;
 	}
 	
+	//Reporting Function
+	public void log(String msg)
+	{
+		test.log(Status.INFO, msg);
+	}
+	
+	public void reportFailure(String failureMsg)
+	{
+		System.out.println(failureMsg);
+		softAssert.fail(failureMsg);
+	}
+	
+	public void assertAll()
+	{
+		softAssert.assertAll();
+	}
 	
 }
