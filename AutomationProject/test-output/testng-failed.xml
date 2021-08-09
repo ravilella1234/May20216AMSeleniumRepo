@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [PortfolioSuite]">
   <test thread-count="5" name="Create Portfolio Test(failed)">
     <classes>
@@ -7,22 +7,18 @@
         <methods>
           <include name="quit"/>
           <include name="beforeTest"/>
-          <include name="createPortofolio" invocation-numbers="0"/>
+          <include name="createPortofolio"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- com.project.suiteA.PortfolioManagement -->
-    </classes>
-  </test> <!-- Create Portfolio Test(failed) -->
-  <test thread-count="5" name="Delete Portfolio Test(failed)">
-    <classes>
-      <class name="com.project.suiteA.PortfolioManagement">
+      <class name="com.project.suiteA.Session">
         <methods>
+          <include name="doLogin"/>
           <include name="quit"/>
           <include name="beforeTest"/>
-          <include name="deletePortofolio"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.project.suiteA.PortfolioManagement -->
+      </class> <!-- com.project.suiteA.Session -->
     </classes>
-  </test> <!-- Delete Portfolio Test(failed) -->
+  </test> <!-- Create Portfolio Test(failed) -->
 </suite> <!-- Failed suite [PortfolioSuite] -->

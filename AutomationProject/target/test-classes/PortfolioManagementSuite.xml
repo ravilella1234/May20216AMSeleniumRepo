@@ -19,7 +19,7 @@
     </classes>
   </test> <!-- Test -->
   
-  <test  name="Delete Portfolio Test">
+  <!--  <test  name="Delete Portfolio Test">
     <classes>
       
       <class name="com.project.suiteA.Session">
@@ -35,6 +35,6 @@
       </class>
       
     </classes>
-  </test> <!-- Test -->
+  </test> --><!-- Test -->
   
 </suite> <!-- Suite -->

@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.ExtentTest;
@@ -148,14 +149,20 @@ public class GenericKeywords
 		test.log(Status.INFO, msg);
 	}
 	
-	public void reportFailure(String failureMsg)
+	public void reportFailure(String failureMsg,boolean stopOnFailure)
 	{
 		System.out.println(failureMsg);
-		softAssert.fail(failureMsg);
+		test.log(Status.FAIL, failureMsg); //failure in Extent Reports
+		softAssert.fail(failureMsg);  // failure in TestNG Reports
+		
+		if(stopOnFailure)
+			assertAll(); // report all the failures
+		
 	}
 	
 	public void assertAll()
 	{
+		Reporter.getCurrentTestResult().getTestContext().setAttribute("criticalFailure", "Y");
 		softAssert.assertAll();
 	}
 	

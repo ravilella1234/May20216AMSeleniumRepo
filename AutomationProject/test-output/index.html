@@ -5,8 +5,9 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
-    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -23,8 +24,9 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-PortfolioSuite">
-              <span class="suite-name border-passed">PortfolioSuite</span>
+              <span class="suite-name border-failed">PortfolioSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -54,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-PortfolioSuite">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,36 +93,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,  1 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-PortfolioSuite" class="hide-methods passed suite-PortfolioSuite"> (hide)</a> <!-- hide-methods passed suite-PortfolioSuite -->
-                      <a href="#" panel-name="suite-PortfolioSuite" class="show-methods passed suite-PortfolioSuite"> (show)</a> <!-- show-methods passed suite-PortfolioSuite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-PortfolioSuite" class="hide-methods failed suite-PortfolioSuite"> (hide)</a> <!-- hide-methods failed suite-PortfolioSuite -->
+                      <a href="#" panel-name="suite-PortfolioSuite" class="show-methods failed suite-PortfolioSuite"> (show)</a> <!-- show-methods failed suite-PortfolioSuite -->
                     </span>
-                    <div class="method-list-content passed suite-PortfolioSuite">
+                    <div class="method-list-content failed suite-PortfolioSuite">
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-PortfolioSuite" title="com.project.suiteA.Session" hash-for-method="doLogin">doLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-PortfolioSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-PortfolioSuite" class="hide-methods skipped suite-PortfolioSuite"> (hide)</a> <!-- hide-methods skipped suite-PortfolioSuite -->
+                      <a href="#" panel-name="suite-PortfolioSuite" class="show-methods skipped suite-PortfolioSuite"> (show)</a> <!-- show-methods skipped suite-PortfolioSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-PortfolioSuite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-PortfolioSuite" title="com.project.suiteA.PortfolioManagement" hash-for-method="createPortofolio">createPortofolio</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-PortfolioSuite" title="com.project.suiteA.PortfolioManagement" hash-for-method="deletePortofolio">deletePortofolio</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-PortfolioSuite" title="com.project.suiteA.Session" hash-for-method="doLogin">doLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-PortfolioSuite" title="com.project.suiteA.Session" hash-for-method="doLogin">doLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-PortfolioSuite -->
+                    </div> <!-- method-list-content skipped suite-PortfolioSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -132,31 +133,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-PortfolioSuite" class="panel PortfolioSuite">
-          <div class="suite-PortfolioSuite-class-passed">
+          <div class="suite-PortfolioSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.project.suiteA.PortfolioManagement</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createPortofolio">
-                  </a> <!-- createPortofolio -->
-                  <span class="method-name">createPortofolio</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="deletePortofolio">
-                  </a> <!-- deletePortofolio -->
-                  <span class="method-name">deletePortofolio</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-PortfolioSuite-class-passed -->
-          <div class="suite-PortfolioSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.project.suiteA.Session</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -165,17 +144,40 @@
                   <a name="doLogin">
                   </a> <!-- doLogin -->
                   <span class="method-name">doLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="doLogin">
-                  </a> <!-- doLogin -->
-                  <span class="method-name">doLogin</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	First Failure - Non Critical ,
+	Element is not found : login_submit_id
+	at com.project.keywords.GenericKeywords.assertAll(GenericKeywords.java:166)
+	at com.project.keywords.GenericKeywords.reportFailure(GenericKeywords.java:159)
+	at com.project.keywords.ValidationKeywords.validateElementPresent(ValidationKeywords.java:19)
+	at com.project.suiteA.Session.doLogin(Session.java:21)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-PortfolioSuite-class-passed -->
+          </div> <!-- suite-PortfolioSuite-class-failed -->
+          <div class="suite-PortfolioSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.project.suiteA.PortfolioManagement</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPortofolio">
+                  </a> <!-- createPortofolio -->
+                  <span class="method-name">createPortofolio</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at com.project.Base.BaseTest.beforeMethod(BaseTest.java:51)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PortfolioSuite-class-skipped -->
         </div> <!-- panel PortfolioSuite -->
         <div panel-name="test-xml-PortfolioSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -184,7 +186,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;PortfolioSuite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Create Portfolio Test&quot;&gt;
     &lt;classes&gt;
@@ -200,20 +202,6 @@
       &lt;/class&gt; &lt;!-- com.project.suiteA.PortfolioManagement --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Create Portfolio Test --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Delete Portfolio Test&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.project.suiteA.Session&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;doLogin&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.project.suiteA.Session --&gt;
-      &lt;class name=&quot;com.project.suiteA.PortfolioManagement&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;deletePortofolio&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.project.suiteA.PortfolioManagement --&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Delete Portfolio Test --&gt;
 &lt;/suite&gt; &lt;!-- PortfolioSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -226,9 +214,6 @@
             <ul>
               <li>
                 <span class="test-name">Create Portfolio Test (2 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">Delete Portfolio Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -254,28 +239,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'doLogin')
 data.setCell(0, 2, 'com.project.suiteA.Session')
-data.setCell(0, 3, 18060);
+data.setCell(0, 3, 16782);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'doLogin')
-data.setCell(1, 2, 'com.project.suiteA.Session')
-data.setCell(1, 3, 17730);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'createPortofolio')
-data.setCell(2, 2, 'com.project.suiteA.PortfolioManagement')
-data.setCell(2, 3, 5);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'deletePortofolio')
-data.setCell(3, 2, 'com.project.suiteA.PortfolioManagement')
-data.setCell(3, 3, 4);
+data.setCell(1, 1, 'createPortofolio')
+data.setCell(1, 2, 'com.project.suiteA.PortfolioManagement')
+data.setCell(1, 3, 0);
 window.suiteTableData['PortfolioSuite']= { tableData: data, tableDiv: 'times-div-PortfolioSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 35 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-PortfolioSuite">
               </div> <!-- times-div-PortfolioSuite -->
             </div> <!-- times-div -->
@@ -290,7 +267,7 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-PortfolioSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">8 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
@@ -298,23 +275,15 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">quit</span>
                 <br/>
-                <span class="ignored-method-name">quit</span>
-                <br/>
-                <span class="ignored-method-name">beforeTest</span>
-                <br/>
                 <span class="ignored-method-name">beforeTest</span>
                 <br/>
                 <span class="ignored-method-name">deletePortofolio</span>
-                <br/>
-                <span class="ignored-method-name">createPortofolio</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.project.suiteA.Session</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">doLogout</span>
-                <br/>
                 <span class="ignored-method-name">doLogout</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
@@ -329,68 +298,43 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.project.suiteA.Session</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">beforeTest(org.testng.TestRunner@7103ab0)</span>
+                <span class="method-name">beforeTest(org.testng.TestRunner@6e0ff644)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(org.testng.TestRunner@7103ab0)</span>
-                <span class="method-start">745 ms</span>
+                <span class="method-name">beforeMethod(org.testng.TestRunner@6e0ff644)</span>
+                <span class="method-start">649 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">doLogin</span>
-                <span class="method-start">749 ms</span>
+                <span class="method-start">652 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.project.suiteA.PortfolioManagement</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(org.testng.TestRunner@7103ab0)</span>
-                <span class="method-start">18878 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">beforeMethod(org.testng.TestRunner@6e0ff644)</span>
+                <span class="method-start">17453 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createPortofolio</span>
-                <span class="method-start">18879 ms</span>
+                <span class="method-start">17463 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.project.suiteA.Session</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">quit</span>
-                <span class="method-start">18889 ms</span>
-              </div> <!-- configuration-test after -->
-              <div class="configuration-test before">
-                <span class="method-name">beforeTest(org.testng.TestRunner@19ccca5)</span>
-                <span class="method-start">21742 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(org.testng.TestRunner@19ccca5)</span>
-                <span class="method-start">21959 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">doLogin</span>
-                <span class="method-start">21959 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.project.suiteA.PortfolioManagement</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(org.testng.TestRunner@19ccca5)</span>
-                <span class="method-start">39699 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">deletePortofolio</span>
-                <span class="method-start">39701 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.project.suiteA.Session</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">quit</span>
-                <span class="method-start">39709 ms</span>
+                <span class="method-start">17476 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

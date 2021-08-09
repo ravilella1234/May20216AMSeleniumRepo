@@ -16,7 +16,7 @@ public class ValidationKeywords extends GenericKeywords
 	public void validateElementPresent(String locator)
 	{
 		// failure
-		reportFailure("Element is not found : " + locator);
+		reportFailure("Element is not found : " + locator, true);
 	}
 
 }
