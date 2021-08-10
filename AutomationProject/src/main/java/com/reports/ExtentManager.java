@@ -1,40 +1,40 @@
 package com.reports;
 
+import java.io.File;
 import java.util.Date;
 
 import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ExtentManager 
 {
-	
-	public static ExtentHtmlReporter htmlReport;
-	public static ExtentReports report;
-	
+	public static ExtentReports reports;
+	public static String screenshotFolderPath;
 	
 	public static ExtentReports getReports()
 	{
-		Date dt = new Date();
-		String htmlFileName = dt.toString().replace(':', '_').replace(' ', '_');
-		
-		if(htmlReport == null)
+		if(reports == null)
 		{
-			htmlReport = new ExtentHtmlReporter("D:\\AprilWorkSpace\\AutomationProject\\reports\\"+htmlFileName+".html");
-			htmlReport.config().setDocumentTitle("Automation Report");
-			htmlReport.config().setReportName("Funtional testing report");
-			htmlReport.config().setTheme(Theme.STANDARD);
+			reports = new ExtentReports();
+			//init th ereport folder
+			Date d = new Date();
+			String reportsFolder = d.toString().replaceAll(":", "_")+"//screenshots";
+			screenshotFolderPath = System.getProperty("user.dir")+"//reports//"+reportsFolder;
+					
+			File f = new File(screenshotFolderPath);
+			f.mkdir();
 			
+			ExtentSparkReporter sparkReporter = new ExtentSparkReporter(screenshotFolderPath);
+			sparkReporter.config().setReportName("Production Regression Testing...");
+			sparkReporter.config().setDocumentTitle("Automation Reports");
+			sparkReporter.config().setTheme(Theme.STANDARD);
 			
-			report= new ExtentReports();
-			report.attachReporter(htmlReport);
-			report.setSystemInfo("OS", "Windows");
-			report.setSystemInfo("Tester Name", "Ravikanth Lella");
-			report.setSystemInfo("Browser", "Chrome");
-			
+			reports.attachReporter(sparkReporter);
 		}
-		return report;
-		
+		return reports;
 	}
+	
+	
 
 }

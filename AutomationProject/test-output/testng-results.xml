@@ -2,34 +2,34 @@
 <testng-results skipped="1" failed="1" ignored="4" total="6" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="PortfolioSuite" duration-ms="18858" started-at="2021-08-09T06:15:31 IST" finished-at="2021-08-09T06:15:50 IST">
+  <suite name="PortfolioSuite" duration-ms="20864" started-at="2021-08-10T06:29:36 IST" finished-at="2021-08-10T06:29:57 IST">
     <groups>
     </groups>
-    <test name="Create Portfolio Test" duration-ms="18858" started-at="2021-08-09T06:15:31 IST" finished-at="2021-08-09T06:15:50 IST">
+    <test name="Create Portfolio Test" duration-ms="20864" started-at="2021-08-10T06:29:36 IST" finished-at="2021-08-10T06:29:57 IST">
       <class name="com.project.suiteA.Session">
-        <test-method status="PASS" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:com.project.suiteA.Session@5f3a4b84]" name="beforeTest" is-config="true" duration-ms="559" started-at="2021-08-09T06:15:31 IST" finished-at="2021-08-09T06:15:32 IST">
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:com.project.suiteA.Session@5f3a4b84]" name="beforeTest" is-config="true" duration-ms="616" started-at="2021-08-10T06:29:36 IST" finished-at="2021-08-10T06:29:37 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6e0ff644]]>
+                <![CDATA[org.testng.TestRunner@2c444798]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.project.suiteA.Session@5f3a4b84]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-09T06:15:32 IST" finished-at="2021-08-09T06:15:32 IST">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.project.suiteA.Session@5f3a4b84]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-10T06:29:37 IST" finished-at="2021-08-10T06:29:37 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6e0ff644]]>
+                <![CDATA[org.testng.TestRunner@2c444798]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="doLogin()[pri:0, instance:com.project.suiteA.Session@5f3a4b84]" name="doLogin" duration-ms="16782" started-at="2021-08-09T06:15:32 IST" finished-at="2021-08-09T06:15:49 IST">
+        <test-method status="FAIL" signature="doLogin()[pri:0, instance:com.project.suiteA.Session@5f3a4b84]" name="doLogin" duration-ms="18702" started-at="2021-08-10T06:29:37 IST" finished-at="2021-08-10T06:29:56 IST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -42,8 +42,8 @@ First Failure - Non Critical ,
 Element is not found : login_submit_id
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at com.project.keywords.GenericKeywords.assertAll(GenericKeywords.java:166)
-at com.project.keywords.GenericKeywords.reportFailure(GenericKeywords.java:159)
+at com.project.keywords.GenericKeywords.assertAll(GenericKeywords.java:174)
+at com.project.keywords.GenericKeywords.reportFailure(GenericKeywords.java:167)
 at com.project.keywords.ValidationKeywords.validateElementPresent(ValidationKeywords.java:19)
 at com.project.suiteA.Session.doLogin(Session.java:21)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -80,17 +80,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLogin -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.project.suiteA.Session@5f3a4b84]" name="quit" is-config="true" duration-ms="1368" started-at="2021-08-09T06:15:49 IST" finished-at="2021-08-09T06:15:50 IST">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.project.suiteA.Session@5f3a4b84]" name="quit" is-config="true" duration-ms="1387" started-at="2021-08-10T06:29:56 IST" finished-at="2021-08-10T06:29:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.project.suiteA.Session -->
       <class name="com.project.suiteA.PortfolioManagement">
-        <test-method status="FAIL" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.project.suiteA.PortfolioManagement@27f723]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-09T06:15:49 IST" finished-at="2021-08-09T06:15:49 IST">
+        <test-method status="FAIL" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.project.suiteA.PortfolioManagement@27f723]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-10T06:29:56 IST" finished-at="2021-08-10T06:29:56 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6e0ff644]]>
+                <![CDATA[org.testng.TestRunner@2c444798]]>
               </value>
             </param>
           </params>
@@ -136,7 +136,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="createPortofolio()[pri:0, instance:com.project.suiteA.PortfolioManagement@27f723]" name="createPortofolio" duration-ms="0" started-at="2021-08-09T06:15:49 IST" finished-at="2021-08-09T06:15:49 IST">
+        <test-method status="SKIP" signature="createPortofolio()[pri:0, instance:com.project.suiteA.PortfolioManagement@27f723]" name="createPortofolio" duration-ms="0" started-at="2021-08-10T06:29:56 IST" finished-at="2021-08-10T06:29:56 IST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
