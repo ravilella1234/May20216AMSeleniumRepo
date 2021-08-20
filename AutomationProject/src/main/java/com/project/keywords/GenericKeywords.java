@@ -177,8 +177,8 @@ public class GenericKeywords
 	public void takeScreenShot()
 	{
 		// fileName of the screenshot
-		Date dt=new Date();
-		String screenshotFile=dt.toString().replace(":", "_").replace(" ", "_")+".png";
+		Date d=new Date();
+		String screenshotFile=d.toString().replace(":", "_").replace(" ", "_")+".png";
 		
 		// take screenshot
 		File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);

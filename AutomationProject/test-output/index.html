@@ -188,6 +188,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;PortfolioSuite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;listener.MyTestNGListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Create Portfolio Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.project.suiteA.Session&quot;&gt;
@@ -243,7 +246,7 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'doLogin')
 data.setCell(0, 2, 'com.project.suiteA.Session')
-data.setCell(0, 3, 18702);
+data.setCell(0, 3, 15910);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'createPortofolio')
 data.setCell(1, 2, 'com.project.suiteA.PortfolioManagement')
@@ -252,7 +255,7 @@ window.suiteTableData['PortfolioSuite']= { tableData: data, tableDiv: 'times-div
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-PortfolioSuite">
               </div> <!-- times-div-PortfolioSuite -->
             </div> <!-- times-div -->
@@ -271,6 +274,13 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
+              <span class="ignored-class-name">com.project.suiteA.Session</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doLogout</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">com.project.suiteA.PortfolioManagement</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">quit</span>
@@ -278,13 +288,6 @@ return data;
                 <span class="ignored-method-name">beforeTest</span>
                 <br/>
                 <span class="ignored-method-name">deletePortofolio</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.project.suiteA.Session</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">doLogout</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -298,18 +301,18 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.project.suiteA.Session</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">beforeTest(org.testng.TestRunner@2c444798)</span>
+                <span class="method-name">beforeTest(org.testng.TestRunner@28c0b664)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(org.testng.TestRunner@2c444798)</span>
-                <span class="method-start">692 ms</span>
+                <span class="method-name">beforeMethod(org.testng.TestRunner@28c0b664)</span>
+                <span class="method-start">565 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">doLogin</span>
-                <span class="method-start">697 ms</span>
+                <span class="method-start">567 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -317,19 +320,19 @@ return data;
               <div class="configuration-method before">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">beforeMethod(org.testng.TestRunner@2c444798)</span>
-                <span class="method-start">19417 ms</span>
+                <span class="method-name">beforeMethod(org.testng.TestRunner@28c0b664)</span>
+                <span class="method-start">16494 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createPortofolio</span>
-                <span class="method-start">19431 ms</span>
+                <span class="method-start">16525 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.project.suiteA.Session</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">quit</span>
-                <span class="method-start">19463 ms</span>
+                <span class="method-start">16544 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
